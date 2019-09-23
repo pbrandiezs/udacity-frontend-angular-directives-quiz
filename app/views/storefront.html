@@ -2,4 +2,9 @@
 Hello!
 <h1 id=storeHeading>{{store.name}}</h1>
 <div id=brickColors>Brick Colors: {{store.brickColors.length}}</div>
-<div id=colorList>List of Colors: {{store.brickColors}}</div>
+<div id=colorList>
+    <h4>List of Colors:</h4>
+    <div ng-repeat="color in store.brickColors">
+        <p id=color-{{color}}>{{color}}</p>
+    </div>
+</div>
